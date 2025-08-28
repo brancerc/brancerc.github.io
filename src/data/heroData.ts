@@ -1,7 +1,7 @@
 export const heroData = {
-  name: 'John Doe',
-  title: 'Full-Stack Developer',
-  description: 'I build scalable web applications and transform raw data into meaningful insights that drive business success.',
+  name: 'Brando Cervantes C',
+  title: 'Network Engineer - Full Stack',
+  description: 'Creo infraestructuras de red robustas y desarrollo aplicaciones que transforman datos en soluciones estratégicas y escalables.',
   profilePicture: 'https://example.com/profilepic.jpg',
   skills: [
     'JavaScript',

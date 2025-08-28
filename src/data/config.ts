@@ -1,5 +1,5 @@
 export const config = {
-  siteTitle: 'John Doe Portfolio',
+  siteTitle: 'Brando Cervantes C. Portfolio',
   description: 'Hi, I am John Doe, a passionate web developer and data analyst. I thrive on solving problems and building innovative solutions with modern technology.',
   author: 'John Doe',
   contactEmail: 'johndoe@example.com',
