@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https:://brancerc.github.io',
+  site: 'https://brancerc.github.io',
   integrations: [
     react(),
     tailwind({
