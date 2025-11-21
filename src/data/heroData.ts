@@ -18,8 +18,8 @@ export const heroData = {
     'Machine Learning'
   ],
   contact: {
-    github: 'https://github.com/johndoe',
-    linkedin: 'https://www.linkedin.com/in/johndoe/',
-    email: 'johndoe@example.com'
+    github: 'https://github.com/brancerc',
+    linkedin: 'https://www.linkedin.com/in/brando-cc/',
+    email: 'brandocervantesc@gmail.com'
   }
 };
