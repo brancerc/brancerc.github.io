@@ -3,17 +3,17 @@ export const footerData = {
   socialLinks: [
     {
       name: 'GitHub',
-      url: 'https://github.com/johndoe',
+      url: 'https://github.com/brancerc',
       icon: 'Github'
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/johndoe/',
+      url: 'https://www.linkedin.com/in/brando-cc/',
       icon: 'Linkedin'
     },
     {
       name: 'Email',
-      url: 'mailto:johndoe@example.com',
+      url: 'mailto:brandocervantesc@gmail.com',
       icon: 'Mail'
     }
   ],

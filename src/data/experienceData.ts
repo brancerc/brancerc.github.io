@@ -5,31 +5,17 @@ export type Job = {
   description: string[];
 };
 
-export const jobs: Job[] = [
+export const education: Education[] = [
   {
-    title: "Data Analyst",
-    company: "Tech Solutions Inc.",
-    dates: "01/2019 - 12/2022",
+    title: "Ingeniería en Telemática",
+    institution: "Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas", // Reemplazar con tu institución real
+    dates: "08/2021 - Presente (9no Semestre)",
     description: [
-      "Developed interactive Power BI dashboards to analyze business performance and customer trends.",
-      "Automated ETL processes using Python and SQL to improve data processing efficiency by 40%.",
-      "Collaborated with stakeholders to identify key performance metrics and optimize reporting strategies.",
-      "Designed predictive models to forecast revenue and customer churn, providing actionable insights.",
-      "Managed data extraction from multiple sources, including APIs, databases, and cloud storage.",
-      "Presented analytical findings to executive teams, leading to data-driven decision-making."
-    ]
-  },
-  {
-    title: "Software Engineer",
-    company: "Innovatech Solutions",
-    dates: "03/2023 - Present",
-    description: [
-      "Developed full-stack web applications using React, Node.js, and MongoDB.",
-      "Implemented RESTful APIs and integrated third-party services for enhanced application functionality.",
-      "Optimized SQL queries and database schemas to improve system performance.",
-      "Led a team of junior developers, mentoring them on best practices in software engineering.",
-      "Designed and implemented CI/CD pipelines, reducing deployment time by 50%.",
-      "Collaborated with UX/UI designers to enhance the user experience of web applications."
+      "Formación integral en ingeniería de redes, telecomunicaciones y ciberseguridad.",
+      "Análisis y diseño de sistemas de transmisión, propagación de ondas y antenas.",
+      "Procesamiento digital de señales (DSP), modulación y simulaciones avanzadas en MATLAB.",
+      "Gestión de seguridad de redes y pentesting utilizando herramientas como Nmap, iptables y Kali Linux.",
+      "Configuración y administración de dispositivos de red (Cisco CLI) y servidores Linux."
     ]
   }
 ];
