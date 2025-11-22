@@ -1,6 +1,6 @@
 export const heroData = {
   name: 'Brando Cervantes C',
-  title: 'Network Engineer - Full Stack',
+  title: 'Network Engineer',
   description: 'Creo infraestructuras de red robustas y desarrollo aplicaciones que transforman datos en soluciones estratégicas y escalables.',
   profilePicture: '/aerospace.jpeg',
   skills: [

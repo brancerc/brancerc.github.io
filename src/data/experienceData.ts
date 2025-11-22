@@ -5,7 +5,7 @@ export type Job = {
   description: string[];
 };
 
-// src/data/experienceData.ts
+
 
 export const jobs = [
   {
