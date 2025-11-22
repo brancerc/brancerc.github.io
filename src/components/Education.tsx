@@ -14,7 +14,8 @@ export default function EducationSection() {
         Education & Certifications
       </h2>
       
-      <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3 max-w-3xl mx-auto">
+      {/* CAMBIO AQUÍ: max-w-6xl para ampliar el ancho */}
+      <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3 max-w-6xl mx-auto">
         {education.map((edu, index) => (
           <div key={index} className="mb-8 ml-6">
             <TimelineDot />

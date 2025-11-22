@@ -13,7 +13,9 @@ export default function ExperienceSection() {
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-primary text-center">
         Experience & Projects
       </h2>
-      <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3 max-w-3xl mx-auto">
+      
+      {/* CAMBIO AQUÍ: De max-w-3xl pasamos a max-w-6xl para que sea más ancho */}
+      <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3 max-w-6xl mx-auto">
         {jobs.map((job, index) => (
           <div key={index} className="mb-8 ml-6">
             <TimelineDot />
