@@ -7,11 +7,13 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
 import Portfolio from '@/components/Portfolio';
+import Education from '@/components/Education';
 import PortfolioFeed from '@/components/PortfolioFeed';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { config } from '../data/config';
+
 
 ---
 
@@ -41,6 +43,7 @@ import { config } from '../data/config';
     <Hero client:load />
     <Experience client:visible />
     <PortfolioFeed client:visible />
+    <Education client:visible />
     <Footer client:visible />
   </main>
 </Layout>
