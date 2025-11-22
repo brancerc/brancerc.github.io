@@ -1,3 +1,5 @@
+// src/data/experienceData.ts
+
 export type Job = {
   title: string;
   company: string;
@@ -5,7 +7,6 @@ export type Job = {
   description: string[];
 };
 
-// Definimos la estructura de la Educación (¡Esto faltaba!)
 export type Education = {
   title: string;
   institution: string;
@@ -13,8 +14,8 @@ export type Education = {
   description: string[];
 };
 
-
-export const jobs = [
+// --- EXPERIENCIA / PROYECTOS ---
+export const jobs: Job[] = [
   {
     title: "Junior Network & Security Engineer",
     company: "Proyectos Independientes",
@@ -29,14 +30,39 @@ export const jobs = [
   }
 ];
 
-// Lista de Educación
+// --- EDUCACIÓN Y CERTIFICACIONES ---
 export const education: Education[] = [
   {
     title: "Ingeniería en Telemática",
-    institution: "UPIITA - IPN", // Lo abrevié para que se vea mejor en móviles, pero puedes poner el nombre completo si prefieres
-    dates: "08/2021 - Presente",
+    institution: "UPIITA - IPN",
+    dates: "2020 - 2025", // Actualizado según tu CV
     description: [
-        "Formación integral en redes de datos, radiocomunicaciones y ciberseguridad."
+      "Especialización en redes de datos, radiocomunicaciones y seguridad informática.",
+      "Desarrollo de habilidades en programación, electrónica y gestión de proyectos tecnológicos."
+    ]
+  },
+  {
+    title: "CCNA (Cisco Certified Network Associate)",
+    institution: "Cisco",
+    dates: "2025",
+    description: [
+      "Validación de conocimientos en fundamentos de red, acceso a la red, conectividad IP, servicios IP, fundamentos de seguridad y automatización."
+    ]
+  },
+  {
+    title: "HCIA - Datacom",
+    institution: "Huawei", // Corregido de 'Hawaii' a 'Huawei'
+    dates: "2025",
+    description: [
+      "Certificación en tecnologías de comunicación de datos, diseño de redes empresariales, implementación y mantenimiento."
+    ]
+  },
+  {
+    title: "Azure Cloud Computing",
+    institution: "Microsoft / IPN",
+    dates: "2025",
+    description: [
+      "Fundamentos de servicios en la nube, arquitectura de Azure, y gestión de recursos e identidad en entornos cloud."
     ]
   }
 ];
