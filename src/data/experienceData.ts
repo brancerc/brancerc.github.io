@@ -5,6 +5,13 @@ export type Job = {
   description: string[];
 };
 
+// Definimos la estructura de la Educación (¡Esto faltaba!)
+export type Education = {
+  title: string;
+  institution: string;
+  dates: string;
+  description: string[];
+};
 
 
 export const jobs = [
@@ -22,14 +29,14 @@ export const jobs = [
   }
 ];
 
-// Esta variable la dejamos aquí por si creamos una sección de educación separada en el futuro
-export const education = [
+// Lista de Educación
+export const education: Education[] = [
   {
     title: "Ingeniería en Telemática",
-    institution: "Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas",
+    institution: "UPIITA - IPN", // Lo abrevié para que se vea mejor en móviles, pero puedes poner el nombre completo si prefieres
     dates: "08/2021 - Presente",
     description: [
-        "Formación en redes y ciberseguridad."
+        "Formación integral en redes de datos, radiocomunicaciones y ciberseguridad."
     ]
   }
 ];
