@@ -52,4 +52,23 @@ export const projects: Project[] = [
       ]
     }
   }
+
+    {
+    id: 3,
+    title: "Automated Financial Reporting System 2",
+    summary: "Created an automated ETL pipeline to streamline financial reporting, reducing manual data processing time for a financial services firm.",
+    images: [
+      "https://example.com/finance1.jpg",
+      "https://example.com/finance2.jpg"
+    ],
+    tags: ["Python", "ETL", "Data Engineering", "Finance", "Power BI", "Automation"],
+    details: {
+      challenge: "The finance team spent excessive time manually aggregating and reconciling data from multiple sources for monthly reports.",
+      solution: "Developed a Python-based ETL pipeline that extracted, cleaned, and loaded financial data into Power BI, automating report generation.",
+      impact: [
+        "Reduced reporting time from 5 days to a few hours, improving efficiency.",
+        "Minimized errors in financial reports, ensuring data accuracy for decision-making."
+      ]
+    }
+  }
 ];
