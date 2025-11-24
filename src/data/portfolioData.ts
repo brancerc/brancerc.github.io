@@ -33,7 +33,7 @@ export const projects: Project[] = [
         "Enhanced customer segmentation, leading to a 15% improvement in personalized recommendations and repeat purchases."
       ]
     }
-  },
+  }, // <--- AQUÍ ESTÁ LA COMA QUE FALTABA
   {
     id: 2,
     title: "Automated Financial Reporting System",
@@ -51,9 +51,8 @@ export const projects: Project[] = [
         "Minimized errors in financial reports, ensuring data accuracy for decision-making."
       ]
     }
-  }
-
-    {
+  }, // <--- Y AQUÍ TAMBIÉN DEBES PONER UNA COMA PARA SEPARAR EL ID 2 DEL 3
+  {
     id: 3,
     title: "Automated Financial Reporting System 2",
     summary: "Created an automated ETL pipeline to streamline financial reporting, reducing manual data processing time for a financial services firm.",
