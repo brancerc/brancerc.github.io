@@ -74,9 +74,9 @@ export const projects: Project[] = [
   ,
   {
     id: 3,
-    title: "SmartQA-AI — REST API Financiera con Spring Boot",
+    title: "SmartQA-AI — Financial REST API",
     summary:
-      "API REST enterprise para gestión de clientes y transacciones financieras. Construida con Spring Boot 3, JPA, validación de RFC mexicano (SAT), documentación Swagger/OpenAPI 3.0 y cobertura de tests con JaCoCo >80%.",
+      "Enterprise REST API for customer and financial transaction management, built with Spring Boot 3, Swagger/OpenAPI 3.0, and JaCoCo test coverage >80%.",
     images: [
       "/projects/general.png",
       "/projects/post.png",
@@ -98,17 +98,17 @@ export const projects: Project[] = [
     ],
     details: {
       challenge:
-        "Diseñar una API financiera robusta con validaciones específicas para el mercado mexicano (RFC formato SAT), manejo estructurado de errores y cobertura de pruebas automatizadas superior al 80%.",
+        "Build a financial-grade API with Mexican RFC (SAT) validation, structured error handling, and automated test coverage above 80%.",
       solution:
-        "Arquitectura en capas (Controller → Service → Repository) con Spring Boot 3. Incluye validación de RFC con regex, base de datos H2 en memoria, Swagger UI interactivo y reportes de cobertura con JaCoCo.",
+        "Layered architecture (Controller → Service → Repository) using Spring Boot 3 and JPA, with H2 in-memory database, interactive Swagger UI, and JaCoCo coverage reports.",
       impact: [
-        "Cobertura de pruebas unitarias e integración >80% validada con JaCoCo.",
-        "10+ endpoints REST documentados con Swagger/OpenAPI 3.0.",
-        "Validación de RFC mexicano (formato SAT) con manejo de errores estructurado por campo.",
+        ">80% test coverage across unit and integration tests, verified with JaCoCo.",
+        "10+ REST endpoints fully documented with Swagger/OpenAPI 3.0.",
+        "Mexican RFC format validation with field-level structured error responses.",
       ],
     },
     externalLink: {
-      title: "Ver repositorio",
+      title: "View Repository",
       url: "https://github.com/brancerc/brancerc.github.io",
     },
   },
