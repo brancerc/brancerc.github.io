@@ -78,12 +78,12 @@ export const projects: Project[] = [
     summary:
       "API REST enterprise para gestión de clientes y transacciones financieras. Construida con Spring Boot 3, JPA, validación de RFC mexicano (SAT), documentación Swagger/OpenAPI 3.0 y cobertura de tests con JaCoCo >80%.",
     images: [
-      "/projects/smart-qa-ai/general.png",
-      "/projects/smart-qa-ai/post.png",
-      "/projects/smart-qa-ai/get.png",
-      "/projects/smart-qa-ai/getTransactions.png",
-      "/projects/smart-qa-ai/dbasecheck.png",
-      "/projects/smart-qa-ai/connect.png",
+      "/projects/general.png",
+      "/projects/post.png",
+      "/projects/get.png",
+      "/projects/getTransactions.png",
+      "/projects/dbasecheck.png",
+      "/projects/connect.png",
     ],
     tags: [
       "Java",
