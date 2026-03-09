@@ -45,30 +45,46 @@ export const projects: Project[] = [
   }, // <--- AQUÍ ESTÁ LA COMA QUE FALTABA
   {
     id: 2,
-    title: "Automated Financial Reporting System",
+    title: "Bus Unit Detector — Edge AI on NVIDIA Jetson",
     summary:
-      "Created an automated ETL pipeline to streamline financial reporting, reducing manual data processing time for a financial services firm.",
+      "Production edge AI system deployed at a Mexico City bus depot. Detects and identifies bus unit numbers from live IP camera streams using YOLO + Tesseract OCR, running 100% on-device on an NVIDIA Jetson Orin Nano with real-time Telegram alerts.",
     images: [
-      "https://example.com/finance1.jpg",
-      "https://example.com/finance2.jpg",
+      "/projects/bus-unit-detector/alarms.jpeg",
+      "/projects/bus-unit-detector/dashboard.png",
+      "/projects/bus-unit-detector/jetson.jpeg",
+      "/projects/bus-unit-detector/topology.jpeg",
+      "/projects/bus-unit-detector/site.jpeg",
+      "/projects/bus-unit-detector/material.jpeg",
+      "/projects/bus-unit-detector/buses1.jpeg",
+      "/projects/bus-unit-detector/buses2.jpeg",
     ],
     tags: [
       "Python",
-      "ETL",
-      "Data Engineering",
-      "Finance",
-      "Power BI",
-      "Automation",
+      "PyTorch",
+      "YOLOv8",
+      "TensorRT",
+      "Tesseract OCR",
+      "OpenCV",
+      "GStreamer",
+      "PostgreSQL",
+      "Flask",
+      "Jetson Orin Nano",
+      "Edge AI",
     ],
     details: {
       challenge:
-        "The finance team spent excessive time manually aggregating and reconciling data from multiple sources for monthly reports.",
+        "Identify bus unit numbers from a live IP camera stream in real time, running entirely on edge hardware with no cloud dependency, while handling low-light conditions, motion blur, and varying angles across 150+ registered units.",
       solution:
-        "Developed a Python-based ETL pipeline that extracted, cleaned, and loaded financial data into Power BI, automating report generation.",
+        "Built a full inference pipeline on NVIDIA Jetson Orin Nano: GStreamer with NVDEC hardware decoding → YOLOv8 optimized via TensorRT → multi-strategy OpenCV image preprocessing (CLAHE, adaptive thresholding, morphological filters) → Tesseract OCR with voting system → PostgreSQL unit validation → Telegram alerts with confidence score. Flask REST API serves live HLS stream and detection history. Deployed as a systemd service with auto-recovery.",
       impact: [
-        "Reduced reporting time from 5 days to a few hours, improving efficiency.",
-        "Minimized errors in financial reports, ensuring data accuracy for decision-making.",
+        "22+ FPS real-time processing with <50ms end-to-end latency, fully on-device.",
+        "150+ bus units validated against PostgreSQL — unauthorized units trigger instant Telegram alerts with snapshot and confidence score.",
+        "Eliminated cloud dependency: 100% on-device inference using TensorRT GPU optimization on Jetson Orin Nano.",
       ],
+    },
+    externalLink: {
+      title: "View Repository",
+      url: "https://github.com/brancerc/bus-unit-detector",
     },
   }, // <--- Y AQUÍ TAMBIÉN DEBES PONER UNA COMA PARA SEPARAR EL ID 2 DEL 3
   ,
