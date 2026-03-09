@@ -1,11 +1,13 @@
 export const config = {
-  siteTitle: 'Brando Cervantes C. Portfolio',
-  description: 'Creo infraestructuras de red robustas y desarrollo aplicaciones que transforman datos en soluciones estratégicas y escalables.',
-  contactEmail: 'brandocervantesc@gmail.com',
-  keywords: 'portfolio, business intelligence, data analysis, Power BI Reports, Software Engineer, Web Developer',
-  favicon: '/satellite1.svg',
+  siteTitle: "Brando Cervantes C. Portfolio",
+  description:
+    "I design reliable network infrastructures and develop applications that transform data into strategic and scalable solutions.",
+  contactEmail: "brandocervantesc@gmail.com",
+  keywords:
+    "portfolio, business intelligence, data analysis, Power BI Reports, Software Engineer, Web Developer",
+  favicon: "/satellite1.svg",
   social: {
-    linkedin: 'https://www.linkedin.com/in/brando-cc/',
-    github: 'https://github.com/brancerc'
-  }
+    linkedin: "https://www.linkedin.com/in/brando-cc/",
+    github: "https://github.com/brancerc",
+  },
 };

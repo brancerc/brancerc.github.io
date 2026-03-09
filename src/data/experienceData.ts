@@ -14,55 +14,55 @@ export type Education = {
   description: string[];
 };
 
-// --- EXPERIENCIA / PROYECTOS ---
+// --- EXPERIENCE / PROJECTS ---
 export const jobs: Job[] = [
   {
     title: "Junior Network & Security Engineer",
-    company: "Proyectos Independientes",
-    dates: "01/2024 - Presente",
+    company: "Independent Projects",
+    dates: "Jan 2024 - Present",
     description: [
-      "Configuración y administración de servidores Linux (Debian/Kali) para entornos de laboratorio y pruebas de seguridad.",
-      "Análisis de vulnerabilidades y tráfico de red utilizando herramientas como Nmap, Wireshark e iptables.",
-      "Diseño y simulación de sistemas de telecomunicaciones y propagación de ondas mediante scripts en MATLAB.",
-      "Implementación de topologías de red seguras y configuración de dispositivos de enrutamiento y conmutación (Cisco CLI).",
-      "Desarrollo de soluciones de software para procesamiento digital de señales y automatización de tareas."
-    ]
-  }
+      "Configuring and administering Linux servers (Debian/Kali) for lab environments and security testing.",
+      "Conducting vulnerability and network traffic analysis using tools such as Nmap, Wireshark, and iptables.",
+      "Designing and simulating telecommunications systems and wave propagation through MATLAB scripting.",
+      "Implementing secure network topologies and configuring routing and switching devices via Cisco CLI.",
+      "Developing software solutions for digital signal processing and task automation.",
+    ],
+  },
 ];
 
-// --- EDUCACIÓN Y CERTIFICACIONES ---
+// --- EDUCATION AND CERTIFICATIONS ---
 export const education: Education[] = [
   {
-    title: "Ingeniería en Telemática",
+    title: "B.S. in Telematics Engineering",
     institution: "UPIITA - IPN",
-    dates: "2020 - 2025", // Actualizado según tu CV
+    dates: "2020 - 2025",
     description: [
-      "Especialización en redes de datos, radiocomunicaciones y seguridad informática.",
-      "Desarrollo de habilidades en programación, electrónica y gestión de proyectos tecnológicos."
-    ]
+      "Specialization in data networks, radiocommunications, and information security.",
+      "Developed skills in programming, electronics, and technology project management.",
+    ],
   },
   {
     title: "CCNA (Cisco Certified Network Associate)",
     institution: "Cisco",
     dates: "2025",
     description: [
-      "Validación de conocimientos en fundamentos de red, acceso a la red, conectividad IP, servicios IP, fundamentos de seguridad y automatización."
-    ]
+      "Validation of expertise in network fundamentals, network access, IP connectivity, IP services, security fundamentals, and automation.",
+    ],
   },
   {
     title: "HCIA - Datacom",
-    institution: "Huawei", // Corregido de 'Hawaii' a 'Huawei'
+    institution: "Huawei",
     dates: "2025",
     description: [
-      "Certificación en tecnologías de comunicación de datos, diseño de redes empresariales, implementación y mantenimiento."
-    ]
+      "Certification in data communication technologies, enterprise network design, implementation, and maintenance.",
+    ],
   },
   {
     title: "Azure Cloud Computing",
     institution: "Microsoft / IPN",
     dates: "2025",
     description: [
-      "Fundamentos de servicios en la nube, arquitectura de Azure, y gestión de recursos e identidad en entornos cloud."
-    ]
-  }
+      "Foundations of cloud services, Azure architecture, and resource and identity management in cloud environments.",
+    ],
+  },
 ];
