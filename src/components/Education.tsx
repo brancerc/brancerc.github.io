@@ -47,7 +47,6 @@ export default function EducationSection() {
       src={edu.image}
       alt={edu.title}
       style={{
-        transform: 'rotate(-90deg)',
         maxWidth: '90%',
         maxHeight: '90%',
         width: 'auto',
