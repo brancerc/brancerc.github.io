@@ -46,7 +46,6 @@ export default function EducationSection() {
                       src={edu.image}
                       alt={edu.title}
                       style={{
-                      
                         maxWidth: '100%',
                         maxHeight: '300px',
                         width: 'auto',
