@@ -42,20 +42,22 @@ export default function EducationSection() {
                 
                 {/* ← AGREGAR ESTO PARA LA IMAGEN */}
                 {edu.image && (
-                  <div className="flex justify-center mt-6">
-                    <img
-                      src={edu.image}
-                      alt={edu.title}
-                      style={{
-                        transform: 'rotate(-90deg)',
-                        maxWidth: '100%',
-                        maxHeight: '350px',
-                        width: 'auto',
-                      }}
-                      className="border rounded-md shadow-sm"
-                    />
-                  </div>
-                )}
+  <div className="flex justify-center mt-6 w-full" style={{ minHeight: '400px' }}>
+    <img
+      src={edu.image}
+      alt={edu.title}
+      style={{
+        transform: 'rotate(-90deg)',
+        maxWidth: '90%',
+        maxHeight: '90%',
+        width: 'auto',
+        height: 'auto',
+        objectFit: 'contain',
+      }}
+      className="border rounded-md shadow-sm"
+    />
+  </div>
+)}
               </CardContent>
             </Card>
           </div>
