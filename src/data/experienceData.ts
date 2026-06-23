@@ -1,36 +1,11 @@
-// src/data/experienceData.ts
-
-export type Job = {
-  title: string;
-  company: string;
-  dates: string;
-  description: string[];
-};
-
 export type Education = {
   title: string;
   institution: string;
   dates: string;
   description: string[];
+  image?: string;  
 };
 
-// --- EXPERIENCE / PROJECTS ---
-export const jobs: Job[] = [
-  {
-    title: "Junior Network & Security Engineer",
-    company: "Independent Projects",
-    dates: "Jan 2024 - Present",
-    description: [
-      "Configuring and administering Linux servers (Debian/Kali) for lab environments and security testing.",
-      "Conducting vulnerability and network traffic analysis using tools such as Nmap, Wireshark, and iptables.",
-      "Designing and simulating telecommunications systems and wave propagation through MATLAB scripting.",
-      "Implementing secure network topologies and configuring routing and switching devices via Cisco CLI.",
-      "Developing software solutions for digital signal processing and task automation.",
-    ],
-  },
-];
-
-// --- EDUCATION AND CERTIFICATIONS ---
 export const education: Education[] = [
   {
     title: "B.S. in Telematics Engineering",
@@ -64,5 +39,15 @@ export const education: Education[] = [
     description: [
       "Foundations of cloud services, Azure architecture, and resource and identity management in cloud environments.",
     ],
+  },
+  // ← AGREGAR AQUÍ:
+  {
+    title: "Certificado de Cableado Estructurado",
+    institution: "CONSANET",
+    dates: "2024",
+    description: [
+      "Certification in structured cabling systems and network infrastructure installation.",
+    ],
+    image: "/cableado.jpg",
   },
 ];

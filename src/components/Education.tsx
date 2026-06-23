@@ -39,6 +39,23 @@ export default function EducationSection() {
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
+                
+                {/* ← AGREGAR ESTO PARA LA IMAGEN */}
+                {edu.image && (
+                  <div className="flex justify-center mt-6">
+                    <img
+                      src={edu.image}
+                      alt={edu.title}
+                      style={{
+                        transform: 'rotate(90deg)',
+                        maxWidth: '100%',
+                        maxHeight: '350px',
+                        width: 'auto',
+                      }}
+                      className="border rounded-md shadow-sm"
+                    />
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
