@@ -75,4 +75,23 @@ export const education: Education[] = [
     ],
     image: "/certificates/cableado.jpg",
   },
+  
+];
+
+export type Badge = {
+  title: string;
+  issuer: string;
+  image: string;
+  url: string;
+  date?: string;
+};
+
+export const badges: Badge[] = [
+  {
+    title: "Azure Fundamentals",
+    issuer: "Microsoft",
+    image: "https://images.credly.com/size/220x220/images/6c3195f9-5f92-481b-94e0-f861e5a4fcef/AZ-900_badge.png",
+    url: "https://www.credly.com/badges/43d5f167-eb2a-4667-9f22-bcb6180b0c32/public_url",
+    date: "2025",
+  },
 ];
