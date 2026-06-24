@@ -33,7 +33,7 @@ export const jobs: Job[] = [
   {
     title: "Edge AI Systems Engineer — Internship",
     company: "CISA, Mexico City",
-    dates: "Dec 2024 - Mar 2025",
+    dates: "Nov 2025 - Jan 2025",
     description: [
       "Designed a PostgreSQL vehicle-tracking DB with Levenshtein plate-OCR correction, cutting data mismatches significantly.",
       "Built a Flask real-time dashboard and Telegram Bot anomaly-alert pipeline, reducing detection-to-response time.",

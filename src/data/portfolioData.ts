@@ -49,6 +49,7 @@ export const projects: Project[] = [
     summary:
       "Production edge AI system deployed at a Mexico City bus depot. Detects and identifies bus unit numbers from live IP camera streams using YOLO + Tesseract OCR, running 100% on-device on an NVIDIA Jetson Orin Nano with real-time Telegram alerts.",
     images: [
+       "/projects/bus-unit-detector/dashboardMetrobus.png",
       "/projects/bus-unit-detector/recognition.jpg",
       "/projects/bus-unit-detector/alarms.jpeg",
       "/projects/bus-unit-detector/dashboard.png",
