@@ -21,9 +21,9 @@ export const projects: Project[] = [
     summary:
       "Designed a virtualized network lab (Cisco CSR1000v core router + IOL-L2 access switches) to automate, verify, and audit network configuration using Infrastructure-as-Code principles.",
     images: [
-      "/projects/network-lab-topology.png",
-      "/projects/network-lab-console.png",
-      "/projects/network-lab-restconf.png",
+      "/projects/net-GNS3/gns31.png",
+      "/projects/net-GNS3/gns32.png",
+      "/projects/net-GNS3/gns33.png",
     ],
     tags: [
       "GNS3",
@@ -95,6 +95,7 @@ export const projects: Project[] = [
   images: [
     "/projects/bus-unit-detector/topology.jpeg",
     "/projects/bus-unit-detector/site.jpeg",
+    "/projects/network-bus/camara_s.jpeg",
   ],
   tags: [
     "Linux Networking",
