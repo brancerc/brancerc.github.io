@@ -17,32 +17,34 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Customer Insights Dashboard for E-Commerce",
+    title: "Network Automation Lab — NetDevOps with GNS3 & NETCONF/RESTCONF",
     summary:
-      "Developed an interactive Power BI dashboard to analyze customer behavior, sales trends, and marketing performance for an e-commerce company.",
+      "Designed a virtualized network lab (Cisco CSR1000v core router + IOL-L2 access switches) to automate, verify, and audit network configuration using Infrastructure-as-Code principles.",
     images: [
-      "https://example.com/dashboard1.jpg",
-      "https://example.com/dashboard2.jpg",
-      "https://example.com/dashboard3.jpg",
+      "/projects/network-lab-topology.png",
+      "/projects/network-lab-console.png",
+      "/projects/network-lab-restconf.png",
     ],
     tags: [
-      "Power BI",
-      "SQL",
-      "Data Visualization",
-      "Customer Analytics",
-      "Business Intelligence",
+      "GNS3",
+      "Cisco IOS-XE",
+      "Netmiko",
+      "NETCONF/RESTCONF",
+      "PostgreSQL",
+      "Network Automation",
     ],
     details: {
       challenge:
-        "The company lacked a centralized reporting system to track customer engagement, purchase patterns, and marketing campaign effectiveness.",
+        "Manually configuring VLANs, OSPF, and security hardening across multiple network devices via CLI is slow, error-prone, and leaves no structured trail to detect configuration drift over time.",
       solution:
-        "Designed and implemented a Power BI dashboard integrating data from Google Analytics, CRM systems, and sales records, providing real-time insights.",
+        "Built a GNS3 lab with a Cisco CSR1000v core router (full IOS-XE) and IOL-L2 access switches, automating configuration via Python/Netmiko and using NETCONF/RESTCONF to pull structured (XML/JSON) configuration state for diffing against expected state, with results logged to PostgreSQL as an audit trail. Along the way, diagnosed and resolved several real infrastructure constraints: nested-virtualization conflicts between Hyper-V/WSL2 and VMware blocking hardware acceleration, hardware RAM limits requiring sequential (not concurrent) node execution, legacy SSH key-exchange negotiation with older IOS-XE images, and an ARP-resolution failure traced to GNS3's internal bridging engine — resolved by isolating the automation control plane on the host OS.",
       impact: [
-        "Increased marketing ROI by 25% through data-driven campaign adjustments.",
-        "Enhanced customer segmentation, leading to a 15% improvement in personalized recommendations and repeat purchases.",
+        "Reduced per-device configuration time from ~20 minutes (manual CLI) to under 2 minutes via automated scripts.",
+        "Implemented a NETCONF/RESTCONF verification layer enabling configuration-drift detection, instead of relying on manual CLI inspection.",
+        "Diagnosed a hypervisor-level ARP/bridging conflict through systematic L2/L3 troubleshooting (rp_filter, iptables, ARP cache analysis), demonstrating network debugging beyond basic scripting.",
       ],
     },
-  }, // <--- AQUÍ ESTÁ LA COMA QUE FALTABA
+  },
   {
     id: 2,
     title: "Bus Unit Detector — Edge AI on NVIDIA Jetson",
@@ -54,10 +56,7 @@ export const projects: Project[] = [
       "/projects/bus-unit-detector/alarms.jpeg",
       "/projects/bus-unit-detector/dashboard.png",
       "/projects/bus-unit-detector/jetson.jpeg",
-      "/projects/bus-unit-detector/topology.jpeg",
-      "/projects/bus-unit-detector/site.jpeg",
       "/projects/bus-unit-detector/buses1.jpeg",
-      "/projects/bus-unit-detector/buses2.jpeg",
     ],
     tags: [
       "Python",
@@ -88,9 +87,37 @@ export const projects: Project[] = [
       url: "https://github.com/brancerc/bus-unit-detector",
     },
   }, // <--- Y AQUÍ TAMBIÉN DEBES PONER UNA COMA PARA SEPARAR EL ID 2 DEL 3
-  ,
   {
-    id: 3,
+  id: 3, // ← ajusta el número según el último id que tengas
+  title: "Edge Gateway Network Topology — Jetson as Single-Port Router",
+  summary:
+    "Designed and deployed a single-NIC network topology using an NVIDIA Jetson Orin Nano as a Linux-based gateway, handling static routing and traffic redirection for an edge AI deployment.",
+  images: [
+    "/projects/bus-unit-detector/topology.jpeg",
+    "/projects/bus-unit-detector/site.jpeg",
+  ],
+  tags: [
+    "Linux Networking",
+    "Static Routing",
+    "iptables",
+    "Switch Configuration",
+    "Single-Port Gateway",
+    "Edge Networking",
+  ],
+  details: {
+    challenge:
+      "The edge AI device (Jetson Orin Nano) had only one physical network interface available on-site, requiring a topology that could route camera traffic, internet access, and local services through a single port without a dedicated router.",
+    solution:
+      "Configured the Jetson as a Linux gateway using static IP assignment, manual routing tables, and traffic redirection rules (iptables) to bridge the IP camera network with the outbound internet connection through a single switch port.",
+    impact: [
+      "Eliminated the need for additional networking hardware, reducing on-site deployment cost and complexity.",
+      "Demonstrated practical Linux routing and traffic management skills in a real production environment.",
+      "Maintained stable connectivity for 24/7 camera streaming and alerting with a minimal single-port topology.",
+    ],
+  },
+},
+  {
+    id: 4,
     title: "SmartQA-AI — Financial REST API",
     summary:
       "Enterprise REST API for customer and financial transaction management, built with Spring Boot 3, Swagger/OpenAPI 3.0, and JaCoCo test coverage >80%.",
