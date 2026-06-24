@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { education } from '@/data/experienceData';
@@ -8,13 +8,21 @@ const TimelineDot = () => (
 );
 
 export default function EducationSection() {
+  useEffect(() => {
+    if (education.some((edu) => edu.badgeId)) {
+      const script = document.createElement('script');
+      script.src = '//cdn.credly.com/assets/utilities/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
-    <section className="container py-24 sm:py-32">
+    <section id="education" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold mb-12 text-primary text-center">
         Education & Certifications
       </h2>
-      
-      {/* CAMBIO AQUÍ: max-w-6xl para ampliar el ancho */}
+
       <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3 max-w-6xl mx-auto">
         {education.map((edu, index) => (
           <div key={index} className="mb-8 ml-6">
@@ -30,33 +38,37 @@ export default function EducationSection() {
                       {edu.institution}
                     </p>
                   </div>
-                  <Badge variant="outline">{edu.dates}</Badge>
+                  <Badge variant="secondary">{edu.dates}</Badge>
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-4">
                 <ul className="list-inside list-disc space-y-1 text-muted-foreground">
                   {edu.description.map((item, idx) => (
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
-                
-                {/* ← AGREGAR ESTO PARA LA IMAGEN */}
+
                 {edu.image && (
-  <div className="flex justify-center mt-6 w-full" style={{ minHeight: '400px' }}>
-    <img
-      src={edu.image}
-      alt={edu.title}
-      style={{
-        maxWidth: '90%',
-        maxHeight: '90%',
-        width: 'auto',
-        height: 'auto',
-        objectFit: 'contain',
-      }}
-      className="border rounded-md shadow-sm"
-    />
-  </div>
-)}
+                  <div className="flex justify-center mt-4">
+                    <img
+                      src={edu.image}
+                      alt={edu.title}
+                      style={{ maxWidth: '100%', maxHeight: '300px' }}
+                      className="border rounded-md"
+                    />
+                  </div>
+                )}
+
+                {edu.badgeId && (
+                  <div className="flex justify-center mt-4">
+                    <div
+                      data-iframe-width="150"
+                      data-iframe-height="270"
+                      data-share-badge-id={edu.badgeId}
+                      data-share-badge-host="https://www.credly.com"
+                    ></div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>

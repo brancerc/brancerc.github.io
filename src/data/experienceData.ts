@@ -13,6 +13,7 @@ export type Education = {
   dates: string;
   description: string[];
   image?: string;
+  badgeId?: string;
 };
 
 // --- EXPERIENCE / PROJECTS ---
@@ -27,6 +28,16 @@ export const jobs: Job[] = [
       "Designing and simulating telecommunications systems and wave propagation through MATLAB scripting.",
       "Implementing secure network topologies and configuring routing and switching devices via Cisco CLI.",
       "Developing software solutions for digital signal processing and task automation.",
+    ],
+  },
+  {
+    title: "Edge AI Systems Engineer — Internship",
+    company: "CISA, Mexico City",
+    dates: "Dec 2024 - Mar 2025",
+    description: [
+      "Designed a PostgreSQL vehicle-tracking DB with Levenshtein plate-OCR correction, cutting data mismatches significantly.",
+      "Built a Flask real-time dashboard and Telegram Bot anomaly-alert pipeline, reducing detection-to-response time.",
+      "Automated daily PDF/CSV reporting pipeline, saving ~4 h/week of manual work; maintained full codebase in Git.",
     ],
   },
 ];
@@ -65,6 +76,7 @@ export const education: Education[] = [
     description: [
       "Foundations of cloud services, Azure architecture, and resource and identity management in cloud environments.",
     ],
+    badgeId: "43d5f167-eb2a-4667-9f22-bcb6180b0c32",
   },
   {
     title: "Certificado de Cableado Estructurado",
@@ -74,24 +86,5 @@ export const education: Education[] = [
       "Certification in structured cabling systems and network infrastructure installation.",
     ],
     image: "/certificates/cableado.jpg",
-  },
-  
-];
-
-export type Badge = {
-  title: string;
-  issuer: string;
-  image: string;
-  url: string;
-  date?: string;
-};
-
-export const badges: Badge[] = [
-  {
-    title: "Azure Fundamentals",
-    issuer: "Microsoft",
-    image: "https://images.credly.com/size/220x220/images/6c3195f9-5f92-481b-94e0-f861e5a4fcef/AZ-900_badge.png",
-    url: "https://www.credly.com/badges/43d5f167-eb2a-4667-9f22-bcb6180b0c32/public_url",
-    date: "2025",
   },
 ];
